@@ -6,11 +6,7 @@ import '../dummy_data.dart';
 class CatagoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("DealiMeal"),
-      ),
-      body: GridView(
+    return GridView(
         padding: const EdgeInsets.all(25),
         children: DUMMY_CATEGORIES
             .map((category) => CategoryItem(
@@ -25,7 +21,6 @@ class CatagoriesScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-      ),
-    );
+      );
   }
 }
